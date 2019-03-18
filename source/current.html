@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Current</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
+<style>
+    
+    body {
+  background-image: url("https://i.imgur.com/1i7jRCB.jpg");
+ 
+  
+}
+
+</style>
+    </head>
+    <body>
+
+
+        <link rel="stylesheet" href="shop.css" />
+
+        <!-- LOGO AND NAME-->
+        <div class="image-container">
+
+            <!-- NAV BAR-->
+            <div id="mySidenav" class="sidenav">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="signup.html">Subscribe</a>
+                <a href="about.html">Learn About Wine!</a>      
+                <a href="myphp.php">Contact us</a>
+                <a href="founder.html">About</a>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>  
+
+
+            <h1 style="font-family:Palatino; color:#802a30;">
+                Divine Grape
+            </h1>
+            <img class="logo" src="https://i.imgur.com/mbhIyVy.png" width="200"> 
+        </div>
+
+
+
+
+        <!-- SUBSCRIPTION BOX--> 
+        <h1>Please fill the subscription form</h1>
+        <div><form action="thanks.html" method="post">
+
+                <label>First Name:
+                    <input type="text" name="FNAME" placeholder="Mohammad" required>
+                </label>
+
+                <label>Last Name:
+                    <input type="text" name="LNAME" placeholder="Li" required>
+                </label>
+
+                <div>
+                    <label> Male
+
+                        <input type="radio" name="Gender" value="M">
+
+                    </label>
+
+                    <label> Female
+
+                        <input type="radio" name="Gender" value="F">
+
+                    </label>
+
+                </div>
+
+
+                <div>
+                    <label> Email:
+                        <input type="email" name="email" placeholder="Your email" > </label>
+
+
+                    <label>Password: <input type="password" name="Password" required minlength="5"> </label>
+
+                </div>
+                <div>
+                    <label> Birthday:
+                        <select name="Month"> 
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>Mar</option>
+                        </select>
+                        <select name="Day">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <select name="Year">
+                            <option>1980</option>
+                            <option>1990</option>
+                            <option>2000</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label> I agree to the terms and conditions
+                        <input type="checkbox" name="agree" required="">
+                    </label>
+
+                </div>
+                <input type="submit" name="login">
+
+            </form></div>
+
+    </body>
+</html>
